@@ -20,6 +20,7 @@ class DemoQa(BasePage):
     #         return False
     #     return True
 
+    #
     # def click_on_the_icon(self, locator):
     #     self.find_element(locator='#app > header > a').click()
     #
