@@ -8,4 +8,3 @@ class ElementsPage(BasePage):
         self.base_url = 'https://demoqa.com/elements'
         self.nadpis_tsentr = WebElement(driver, 'div.col-12.mt-4.col-md-6')
         super().__init__(driver, self.base_url)
-

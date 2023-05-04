@@ -1,5 +1,5 @@
 from pages.base_page import BasePage
-from selenium.common.exceptions import NoSuchElementException
+# from selenium.common.exceptions import NoSuchElementException
 from components.components import WebElement
 
 

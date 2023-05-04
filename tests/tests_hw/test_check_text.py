@@ -19,4 +19,4 @@ def test_btn_text(browser):
     if demo_qa_hw2.nadpis_tsentr.get_text() == 'Please select an item from left to start practice.':
         return True
     else:
-        return False
+        return False  # assert?
