@@ -14,3 +14,9 @@ def test_btn_text(browser):
     demo_qa_hw1.visit()
     demo_qa_hw1.btn_hw.click()
     assert demo_qa_hw2.nadpis_tsentr.get_text() == 'Please select an item from left to start practice.'
+
+
+def test_page_elements(browser):
+    demo_qa_elements = ElementsPage
+    demo_qa_elements.visit()
+    demo_qa_elements.
