@@ -17,6 +17,10 @@ def test_btn_text(browser):
 
 
 def test_page_elements(browser):
-    demo_qa_elements = ElementsPage
+    demo_qa_elements = ElementsPage(browser)
     demo_qa_elements.visit()
-    demo_qa_elements.
+    assert demo_qa_elements.header.get_text() == 'Elements'
+    assert demo_qa_elements.icon_head.exist()
+    assert demo_qa_elements.btn_sidebar_first.exist()
+    assert demo_qa_elements.btn_sidebar_first_textbox.exist()
+
