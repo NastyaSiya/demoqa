@@ -5,7 +5,7 @@ from components.components import WebElement
 class FormPage(BasePage):
 
     def __init__(self, driver):
-        self.base_url = 'https://demoqa.com/atomation-practice-form'
+        self.base_url = 'https://demoqa.com/automation-practice-form'
         super().__init__(driver, self.base_url)
         self.first_name = WebElement(driver, '#firstName')
         self.last_name = WebElement(driver, '#lastName')

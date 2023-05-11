@@ -9,7 +9,7 @@ class DemoQa(BasePage):
         self.pageData = {
             'title': 'DEMOQA'
         }
-        self.base_url = 'https://demoqa.com'
+        self.base_url = 'https://demoqa.com/'
         self.icon = WebElement(driver, '#app > header > a')
         self.btn_elements = WebElement(driver, '#app>div>div>div.home-body>div>div>div:nth-child(1)')
         self.podval = WebElement(driver, '#app > footer > span')
