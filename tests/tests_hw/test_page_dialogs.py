@@ -8,6 +8,7 @@ def test_modal_elements(browser):
     assert modal_page.btn1_5.check_count_elements(5)
 
 
+
 def test_navigation_modal(browser):
     modal_page = ModalDialogs(browser)
     demo_qa = DemoQa(browser)
