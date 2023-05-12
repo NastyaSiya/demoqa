@@ -13,3 +13,5 @@ class SauseDemoKorzina(BasePage):
         self.btn_del_tovar1 = WebElement(driver, '#remove-sauce-labs-backpack')
         self.btn_del_tovar2 = WebElement(driver, '#remove-sauce-labs-fleece-jacket')
         self.marker = WebElement(driver, '#shopping_cart_container > a > span')
+        self.btn_menu = WebElement(driver, '#react-burger-menu-btn')
+        self.btn_menu_logout = WebElement(driver, '#logout_sidebar_link')

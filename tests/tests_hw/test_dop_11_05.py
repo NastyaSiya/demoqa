@@ -1,3 +1,4 @@
+import time
 from pages.saucedemo import SauceDemo
 from pages.sausedemokorzina import SauseDemoKorzina
 from pages.saucekatalog import SauceKatalog
@@ -31,3 +32,26 @@ def test_korzina(browser):
     assert not sauce_korzina.tovar1.exist()
     assert not sauce_korzina.tovar2.exist()
     assert not sauce_korzina.marker.exist()
+
+
+def test_korzina_razlogin(browser):
+    sauce_page = SauceDemo(browser)
+    sauce_katalog = SauceKatalog(browser)
+    sauce_korzina = SauseDemoKorzina(browser)
+
+    sauce_page.visit()
+    sauce_page.username.send_keys('standard_user')
+    sauce_page.password.send_keys('secret_sauce')
+    sauce_page.btn_submit.click()
+    sauce_katalog.btn_kof_korz.click()
+    sauce_katalog.btn_ruk_korz.click()
+    sauce_katalog.btn_korz.click()
+    sauce_korzina.btn_menu.click()
+    time.sleep(2)
+    sauce_korzina.btn_menu_logout.click()
+    sauce_page.username.send_keys('standard_user')
+    sauce_page.password.send_keys('secret_sauce')
+    sauce_page.btn_submit.click()
+    sauce_katalog.btn_korz.click()
+    assert sauce_korzina.tovar1.exist()
+    assert sauce_korzina.tovar2.exist()
