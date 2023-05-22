@@ -10,3 +10,5 @@ class ModalDialogs(BasePage):
 
         self.btn1_5 = WebElement(driver, '#item-2')
         self.icon = WebElement(driver, 'header > a > img')
+        self.small_modal = WebElement(driver, '#showSmallModal')
+        self.large_modal = WebElement(driver, '#showLargeModal')
