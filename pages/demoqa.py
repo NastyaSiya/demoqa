@@ -14,6 +14,7 @@ class DemoQa(BasePage):
         self.btn_elements = WebElement(driver, '#app>div>div>div.home-body>div>div>div:nth-child(1)')
         self.podval = WebElement(driver, '#app > footer > span')
         self.btn_hw = WebElement(driver, 'div.home-body > div > div:nth-child(1)')
+        self.zag = WebElement(driver, 'div.card-body > h5')
         super().__init__(driver, self.base_url)
 
     # def exist_icon(self):

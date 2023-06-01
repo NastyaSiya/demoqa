@@ -9,3 +9,8 @@ def browser():
     yield driver
     driver.quit()
 
+@pytest.fixture
+def dostup():
+    if webdriver.Chrome().current_url:
+        return True
+    return pytest.skip()

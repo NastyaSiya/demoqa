@@ -30,3 +30,7 @@ class Webtables(BasePage):
         self.total_pages = WebElement(driver, 'span.-pageInfo > span')
         self.this_page = WebElement(driver, 'input[type=number]')
 
+        self.st_fn = WebElement(driver, 'div:nth-child(1) > div.rt-resizable-header-content')
+        self.st_a = WebElement(driver, 'div.rt-th.rt-resizable-header.-sort-asc.-cursor-pointer > div.rt-resizable-header-content')
+        self.znach1_st_fn = WebElement(driver, 'div.rt-tbody > div:nth-child(1) > div > div:nth-child(1)')
+        self.znach1_st_a = WebElement(driver, 'div.rt-tbody > div:nth-child(1) > div > div:nth-child(3)')
